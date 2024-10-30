@@ -1,486 +1,542 @@
-<!-- Note :
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Note :
    - You can modify the font style and form style to suit your website. 
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
-   <div class="wholeWebForm">
-    <div id='crmWebToEntityForm' class='zcwf_lblRight crmWebToEntityForm formContainer'
-        style='background-color: &#x23;1A1A1A;color: &#x23;8e8e8e; border-radius:20px; max-width: 350px;'>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+    <div class="wholeWebForm">
+        <div id='crmWebToEntityForm' class='zcwf_lblRight crmWebToEntityForm formContainer'
+            style='background-color: &#x23;1A1A1A;color: &#x23;8e8e8e; border-radius:20px; max-width: 350px;'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
 
-        <form id='webform725008000001971001' action='https://crm.zoho.in/crm/WebToLeadForm'
-            name=WebToLeads725008000001971001 method='POST'
-            onSubmit='javascript:document.charset="UTF-8"; return checkMandatory725008000001971001()'
-            accept-charset='UTF-8'>
-            <input type='text' style='display:none;' name='xnQsjsdp'
-                value='e0702b5201066ada8dd32704bdb39ca99cdbc9cc58097cf2bb637ac63a449e36'></input>
-            <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-            <input type='text' style='display:none;' name='xmIwtLD'
-                value='f6a4a9b5e774302213b9fbf6a9262cb58bef1db37ad19dbf89b9adaa35ece25d6b8003aeeea45bd3648c8609939a8cea'></input>
-            <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
-            <input type='text' style='display:none;' name='returnURL'
-                value='https&#x3a;&#x2f;&#x2f;logiceducation.org&#x2f;thankyou-page&#x2f;'> </input>
-            <!-- Do not remove this code. -->
-            <style>
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-
-                .formContainer {
-                    margin-top: 50px;
-                    margin: 0 auto;
-                    display: block;
-                    padding: 20px 0;
-                }
-
-                .formContainer form {
-                    width: 90%;
-                    margin: 0px auto;
-                    display: block;
-                }
-
-                .formTitle {
-                    font-size: 26px;
-                    color: #00C0FB !important;
-                    font-weight: 600;
-                    padding: 10px 0px 20px 0;
-                    text-align: center;
-                }
-
-                .Names {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                .Names>div {
-                    /* padding: 10px; */
-                    width: 50%;
-
-                }
-
-                .fName,
-                .lName,
-                .mobile,
-                .email,
-                .course {
-                    margin: 0 0 15px 0;
-                    padding: 0 5px;
-
-                }
-
-                .fName label,
-                .lName label,
-                .mobile label,
-                .email label,
-                .course label {
-                    width: 100%;
-                    display: inline-block;
-                    margin-bottom: 5px;
-                    padding: 0 10px;
-
-                }
-                .zcwf_col_fld input{
-                    border-style: none !important;
-                }
-                .fName input,
-                .lName input,
-                .mobile input,
-                .email input,
-                .submit input,
-                .reset input {
-                    padding:  12px 10px;
-                    border-radius: 5px;
-                    width: 100%;
-                    border: none;
-                    background-color: #333333;
-                    display: inline-block;
-                    border:2px solid transparent !important;
-                    outline: none !important;
-                    color: white ;
-                }
-                .mobile input.alert{
-                    border:2px solid red !important;
-                }
-                .fName input:focus,
-                .lName input:focus,
-                .mobile input:focus,
-                .email input:focus,
-                .submit input:focus,
-                .reset input:focus{
-                    border:2px solid #00C0FB !important;
-                }
-                .course select {
-                    padding: 10px;
-                    border-radius: 5px;
-                    width: 100%;
-                    outline: none;
-                    border: 2px solid transparent;
-                    background-color: #333333;
-                    display: inline-block;
-                    color: #fff;
-                }
-                .course select:focus{
-                    border: 2px solid #00c0fb !important;
-                }
-
-                .subreset {
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-
-                .subreset>div {
-                    width: 100%;
-                    padding: 10px 5px;
-                }
-
-                .submit_btn input{
-                    background: #00C0FB !important;
-                    color: #fff !important;
-                    padding: 10px !important;
-                    font-weight: 600 !important;
-                    font-size: 16px !important;
-                    letter-spacing: 1px !important;
-                    border: 2px solid transparent !important;
-                    transition: .3s !important;
-                    width: 100%;
-                    border-radius: 5px !important;
-                    cursor: pointer;
-                }
-                .hide {
-                    display: none;
-                }
-                .submit_btn input:hover{
-                    border: 2px solid #00C0FB !important;
-                    background-color: #333333 !important;
-                }
-                .reset_btn{
-                    display: none !important;
-                }
-                .reset_btn input:hover{
-                    background-color: #333333 !important;
-                    border: 2px solid red !important;
-                }
-                #formsubmit{
-                    pointer-events: none;
-                }
-                @media only screen and (max-width:468px){
-                    
-                    .formContainer{
-                        width: 400px ;
-                        padding: 20px;
+            <form id='webform725008000001971001' action='https://crm.zoho.in/crm/WebToLeadForm'
+                name=WebToLeads725008000001971001 method='POST'
+                onSubmit='javascript:document.charset="UTF-8"; return checkMandatory725008000001971001()'
+                accept-charset='UTF-8'>
+                <input type='text' style='display:none;' name='xnQsjsdp'
+                    value='e0702b5201066ada8dd32704bdb39ca99cdbc9cc58097cf2bb637ac63a449e36'></input>
+                <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+                <input type='text' style='display:none;' name='xmIwtLD'
+                    value='f6a4a9b5e774302213b9fbf6a9262cb58bef1db37ad19dbf89b9adaa35ece25d6b8003aeeea45bd3648c8609939a8cea'></input>
+                <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+                <input type='text' style='display:none;' name='returnURL'
+                    value='https&#x3a;&#x2f;&#x2f;logiceducation.org&#x2f;thankyou-page&#x2f;'> </input>
+                <!-- Do not remove this code. -->
+                <style>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
                     }
-                    .formContainer form{
+
+                    .formContainer {
+                        margin-top: 50px;
+                        margin: 0 auto;
+                        display: block;
+                        padding: 20px 0;
+                    }
+
+                    .formContainer form {
+                        width: 90%;
+                        margin: 0px auto;
+                        display: block;
+                    }
+
+                    .formTitle {
+                        font-size: 26px;
+                        color: #00C0FB !important;
+                        font-weight: 600;
+                        padding: 10px 0px 20px 0;
+                        text-align: center;
+                    }
+
+                    .Names {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    .Names>div {
+                        /* padding: 10px; */
+                        width: 50%;
+
+                    }
+
+                    .fName,
+                    .lName,
+                    .mobile,
+                    .email,
+                    .course {
+                        margin: 0 0 15px 0;
+                        padding: 0 5px;
+
+                    }
+
+                    .fName label,
+                    .lName label,
+                    .mobile label,
+                    .email label,
+                    .course label {
                         width: 100%;
-                    }   
-                }
-                
-            </style>
-            <div class='zcwf_title formTitle' style=' max-width: 600px;color: &#x23;8e8e8e; font-family:Verdana;'>GET A
-                CALL BACK</div>
-            <div class="Names">
-                <div class='zcwf_row fName'>
-                    
-                    <div class='zcwf_col_fld'><input type='text' id='First_Name' aria-required='true'
-                            aria-label='First Name' placeholder="First Name" required name='First Name' aria-valuemax='40' maxlength='40'></input>
-                        <div class='zcwf_col_help'></div>
-                    </div>
-                </div>
-                <div class='zcwf_row lName'>
-                    
-                    <div class='zcwf_col_fld'><input type='text' placeholder="Last Name" id='Last_Name' aria-required='true'
-                            aria-label='Last Name' name='Last Name' aria-valuemax='80' required maxlength='80'></input>
-                        <div class='zcwf_col_help'></div>
-                    </div>
-                </div>
-            </div>
-            <!-- hide -->
-            <div class='zcwf_row wfrm_fld_dpNn hide'>
-                <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='LEADCF9'>Country
-                        Code</label></div>
-                <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
-                        aria-haspopup='listbox' id='LEADCF9' onChange='addAriaSelected725008000001971001()'
-                        aria-required='false' aria-label='LEADCF9' name='LEADCF9'>
-                        <option value='-None-'>-None-</option>
-                        <option selected value='India'>India</option>
-                        <option value='Ireland'>Ireland</option>
-                        <option value='UAE'>UAE</option>
-                        <option value='USA'>USA</option>
-                    </select>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <div class='zcwf_row wfrm_fld_dpNn hide'>
-                <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='Lead_Source'>Lead
-                        Source</label></div>
-                <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
-                        aria-haspopup='listbox' id='Lead_Source' onChange='addAriaSelected725008000001971001()'
-                        aria-required='false' aria-label='Lead Source' name='Lead Source'>
-                        <option value='-None-'>-None-</option>
-                        <option value='Referral'>Referral</option>
-                        <option value='Webinar'>Webinar</option>
-                        <option value='Seminar'>Seminar</option>
-                        <option value='Walk&#x20;In'>Walk In</option>
-                        <option value='Incoming&#x20;Calls'>Incoming Calls</option>
-                        <option value='Purchased&#x20;Data'>Purchased Data</option>
-                        <option selected value='Digital&#x20;Leads'>Digital Leads</option>
-                        <option value='Scholarship'>Scholarship</option>
-                        <option value='Events&#x20;&amp;&#x20;Programs'>Events &amp; Programs</option>
-                        <option value='Website'>Website</option>
-                        <option value='Upselling'>Upselling</option>
-                    </select>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <div class='zcwf_row wfrm_fld_dpNn hide'>
-                <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='LEADCF102'>From
-                        Website</label></div>
-                <div class='zcwf_col_fld'><input type='checkbox' aria-checked='false' class='zcwf_ckbox' id='LEADCF102'
-                        aria-required='false' aria-label='LEADCF102' name='LEADCF102' aria-valuemax='3' maxlength='3'
-                        onclick='addAriaChecked725008000001971001()' checked='true'></input>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <!-- hide -->
-            <div class='zcwf_row mobile'>
-                
-                <div class='zcwf_col_fld'>
-                    <input type='text' oninput="this.value = this.value.replace(/[^0-9]/g, '')" id='Mobile'
-                        aria-required='true' aria-label='Mobile' required name='Mobile' placeholder="Mobile" aria-valuemax='30' minlength="10"
-                        maxlength='30'></input>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <div class='zcwf_row email'>
-                <div class='zcwf_col_fld'><input type='email' placeholder="Email" ftype='email' autocomplete='false' id='Email'
-                        aria-required='false' aria-label='Email' name='Email' aria-valuemax='100' crmlabel=''
-                        maxlength='100'></input>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <div class='zcwf_row course'>
-                <!-- <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label
-                        for='LEADCF31'>Course<span style='color:red;'>*</span></label></div> -->
-                <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' required role='combobox' aria-expanded='false'
-                        aria-haspopup='listbox' id='LEADCF31' onChange='addAriaSelected725008000001971001()'
-                        aria-required='true' aria-label='LEADCF31' name='LEADCF31'>
-                        <option value='-None-'>Select Course</option>
-                        <option value='CA&#x20;Foundation'>CA Foundation</option>
-                        <option value='CA&#x20;Intermediate'>CA Intermediate</option>
-                        <option value='CSEET'>CSEET</option>
-                        <option value='CA&#x20;Final'>CA Final</option>
-                        <option value='ACCA'>ACCA</option>
-                        <option value='BCOM&#x20;&#x2b;&#x20;ACCA'>BCOM &#x2b; ACCA</option>
-                        <option value='MBA&#x20;&#x2b;&#x20;ACCA'>MBA &#x2b; ACCA</option>
-                        <option value='CMA&#x20;USA'>CMA USA</option>
-                        <option value='CMA&#x20;-CAT'>CMA -CAT</option>
-                        <option value='CMA&#x20;Intermediate'>CMA Intermediate</option>
-                        <option value='CMA&#x20;Final'>CMA Final</option>
-                        <option value='CPA&#x20;USA'>CPA USA</option>
-                        <option value='MCOM&#x20;&#x2b;&#x20;CPA'>MCOM &#x2b; CPA</option>
-                        <option value='CIA'>CIA</option>
-                        <option value='EA'>EA</option>
-                        <option value='CS&#x20;Executive'>CS Executive</option>
-                        <option value='Nil'>Nil</option>
-                    </select>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <!-- hide -->
-            <div class='zcwf_row wfrm_fld_dpNn hide'>
-                <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='Lead_Status'>Lead
-                        Status</label></div>
-                <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
-                        aria-haspopup='listbox' id='Lead_Status' onChange='addAriaSelected725008000001971001()'
-                        aria-required='false' aria-label='Lead Status' name='Lead Status'>
-                        <option value='-None-'>-None-</option>
-                        <option selected value='New&#x20;Lead'>New Lead</option>
-                        <option value='Ringing,&#x20;Not&#x20;Responding'>Ringing, Not Responding</option>
-                        <option value='Connected'>Connected</option>
-                        <option value='Need&#x20;Follow-up'>Need Follow-up</option>
-                        <option value='Junk&#x20;Lead'>Junk Lead</option>
-                        <option value='Not&#x20;Interested'>Not Interested</option>
-                        <option value='Not&#x20;Contacted'>Not Contacted</option>
-                        <option value='Qualified'>Qualified</option>
-                        <option value='Not&#x20;Qualified'>Not Qualified</option>
-                        <option value='Lost&#x20;Lead'>Lost Lead</option>
-                    </select>
-                    <div class='zcwf_col_help'></div>
-                </div>
-            </div>
-            <!-- hide -->
-
-            <div class='zcwf_row '>
-                <div class='zcwf_col_lab'></div>
-                <div class='zcwf_col_fld subreset'>
-                    <div class="submit_btn">
-                        <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button' value='Submit'
-                            aria-label='Submit' title='Submit'>
-                    </div>
-                    <div class="reset_btn">
-                        <input type='reset' class='zcwf_button' role='button' name='reset' value='Reset'
-                            aria-label='Reset' title='Reset'>
-
-                    </div>
-                </div>
-            </div>
-            <script>
-
-                const Mobile = document.getElementById("Mobile");
-                Mobile.addEventListener("focus", () => {Mobile.classList.remove("alert")})
-
-                Mobile.addEventListener("keyup", () => {
-                    
-                    if(Mobile.value.length > 9){
-                        document.getElementById("formsubmit").style.pointerEvents = "visible"
-                    }
-                    else{
-                        document.getElementById("formsubmit").style.pointerEvents = "none"
+                        display: inline-block;
+                        margin-bottom: 5px;
+                        padding: 0 10px;
 
                     }
-                })
-                Mobile.addEventListener("change", () => {
-                    
-                    if(Mobile.value.length > 9){
-                        document.getElementById("formsubmit").style.pointerEvents = "visible"
-                    }
-                    else{
-                        Mobile.classList.add('alert');
-                        alert("Enter Minimum 10 digit Mobile Number")
-                        document.getElementById("formsubmit").style.pointerEvents = "none"
-                    }
-                })
-                Mobile.addEventListener("blur", () => {
-                    if(Mobile.value.length < 10){
-                        Mobile.classList.add('alert');
-                        alert("Enter Minimum 10 digit Mobile Number")
-                    }
-                    Mobile.style.border = "none"
-                })
-                function addAriaChecked725008000001971001() {
-                    var checkboxElem = event.target;
-                    if (checkboxElem != undefined && checkboxElem.checked) {
-                        checkboxElem.ariaChecked = 'true';
-                    }
-                    else if (checkboxElem != undefined && !checkboxElem.checked) {
-                        checkboxElem.ariaChecked = 'false';
-                    }
-                }
 
-                function addAriaSelected725008000001971001() {
-                    var optionElem = event.target;
-                    var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
-                    if (previousSelectedOption) {
-                        previousSelectedOption.removeAttribute('aria-selected');
+                    .zcwf_col_fld input {
+                        border-style: none !important;
                     }
-                    optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
-                }
-                function validateEmail725008000001971001() {
-                    var form = document.forms['WebToLeads725008000001971001'];
-                    var emailFld = form.querySelectorAll('[ftype=email]');
-                    var i;
-                    for (i = 0; i < emailFld.length; i++) {
-                        var emailVal = emailFld[i].value;
-                        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
-                            var atpos = emailVal.indexOf('@');
-                            var dotpos = emailVal.lastIndexOf('.');
-                            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                                alert('Please enter a valid email address. ');
-                                emailFld[i].focus();
-                                return false;
-                            }
+
+                    .fName input,
+                    .lName input,
+                    .mobile input,
+                    .email input,
+                    .submit input,
+                    .reset input {
+                        padding: 12px 10px;
+                        border-radius: 5px;
+                        width: 100%;
+                        border: none;
+                        background-color: #333333;
+                        display: inline-block;
+                        border: 2px solid transparent !important;
+                        outline: none !important;
+                        color: white;
+                    }
+
+                    .mobile input.alert {
+                        border: 2px solid red !important;
+                    }
+
+                    .fName input:focus,
+                    .lName input:focus,
+                    .mobile input:focus,
+                    .email input:focus,
+                    .submit input:focus,
+                    .reset input:focus {
+                        border: 2px solid #00C0FB !important;
+                    }
+
+                    .course select {
+                        padding: 10px;
+                        border-radius: 5px;
+                        width: 100%;
+                        outline: none;
+                        border: 2px solid transparent;
+                        background-color: #333333;
+                        display: inline-block;
+                        color: #fff;
+                    }
+
+                    .course select:focus {
+                        border: 2px solid #00c0fb !important;
+                    }
+
+                    .subreset {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    .subreset>div {
+                        width: 100%;
+                        padding: 10px 5px;
+                    }
+
+                    .submit_btn input {
+                        background: #00C0FB !important;
+                        color: #fff !important;
+                        padding: 10px !important;
+                        font-weight: 600 !important;
+                        font-size: 16px !important;
+                        letter-spacing: 1px !important;
+                        border: 2px solid transparent !important;
+                        transition: .3s !important;
+                        width: 100%;
+                        border-radius: 5px !important;
+                        cursor: pointer;
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+
+                    .submit_btn input:hover {
+                        border: 2px solid #00C0FB !important;
+                        background-color: #333333 !important;
+                    }
+
+                    .reset_btn {
+                        display: none !important;
+                    }
+
+                    .reset_btn input:hover {
+                        background-color: #333333 !important;
+                        border: 2px solid red !important;
+                    }
+
+                    #formsubmit {
+                        pointer-events: none;
+                    }
+
+                    @media only screen and (max-width:468px) {
+
+                        .formContainer {
+                            width: 400px;
+                            padding: 20px;
+                        }
+
+                        .formContainer form {
+                            width: 100%;
                         }
                     }
-                    return true;
-                }
-                function checkMandatory725008000001971001() {
-                    const number = document.getElementById("Mobile").value;
-                    const fName = document.getElementById("First_Name").value;
-                    const lName = document.getElementById("Last_Name").value;
-                    const Course = document.getElementById("LEADCF31").value;
-                    const Submit = document.getElementById("formsubmit");
+                </style>
+                <div class='zcwf_title formTitle' style=' max-width: 600px;color: &#x23;8e8e8e; font-family:Verdana;'>
+                    GET A
+                    CALL BACK</div>
+                <div class="Names">
+                    <div class='zcwf_row fName'>
 
-                    if (number.length > 9 && number.length <= 10) {                      
+                        <div class='zcwf_col_fld'><input type='text' id='First_Name' aria-required='true'
+                                aria-label='First Name' placeholder="First Name" required name='First Name'
+                                aria-valuemax='40' maxlength='40'></input>
+                            <div class='zcwf_col_help'></div>
+                        </div>
+                    </div>
+                    <div class='zcwf_row lName'>
 
-                        var mndFileds = new Array('First Name', 'Last Name', 'Mobile', 'LEADCF31');
-                        var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Mobile', 'Course');
-                        for (i = 0; i < mndFileds.length; i++) {
-                            var fieldObj = document.forms['WebToLeads725008000001971001'][mndFileds[i]];
-                            if (fieldObj) {
-                                if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                    if (fieldObj.type == 'file') {
-                                        alert('Please select a file to upload.');
-                                        fieldObj.focus();
-                                        return false;
-                                    }
-                                    alert(fldLangVal[i] + 'cannot be empty.');
-                                    fieldObj.focus();
+                        <div class='zcwf_col_fld'><input type='text' placeholder="Last Name" id='Last_Name'
+                                aria-required='true' aria-label='Last Name' name='Last Name' aria-valuemax='80' required
+                                maxlength='80'></input>
+                            <div class='zcwf_col_help'></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hide -->
+                <div class='zcwf_row wfrm_fld_dpNn hide'>
+                    <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='LEADCF9'>Country
+                            Code</label></div>
+                    <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                            aria-haspopup='listbox' id='LEADCF9' onChange='addAriaSelected725008000001971001()'
+                            aria-required='false' aria-label='LEADCF9' name='LEADCF9'>
+                            <option value='-None-'>-None-</option>
+                            <option selected value='India'>India</option>
+                            <option value='Ireland'>Ireland</option>
+                            <option value='UAE'>UAE</option>
+                            <option value='USA'>USA</option>
+                        </select>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <div class='zcwf_row wfrm_fld_dpNn hide'>
+                    <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label
+                            for='Lead_Source'>Lead
+                            Source</label></div>
+                    <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                            aria-haspopup='listbox' id='Lead_Source' onChange='addAriaSelected725008000001971001()'
+                            aria-required='false' aria-label='Lead Source' name='Lead Source'>
+                            <option value='-None-'>-None-</option>
+                            <option value='Referral'>Referral</option>
+                            <option value='Webinar'>Webinar</option>
+                            <option value='Seminar'>Seminar</option>
+                            <option value='Walk&#x20;In'>Walk In</option>
+                            <option value='Incoming&#x20;Calls'>Incoming Calls</option>
+                            <option value='Purchased&#x20;Data'>Purchased Data</option>
+                            <option selected value='Digital&#x20;Leads'>Digital Leads</option>
+                            <option value='Scholarship'>Scholarship</option>
+                            <option value='Events&#x20;&amp;&#x20;Programs'>Events &amp; Programs</option>
+                            <option value='Website'>Website</option>
+                            <option value='Upselling'>Upselling</option>
+                        </select>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <div class='zcwf_row wfrm_fld_dpNn hide'>
+                    <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label for='LEADCF102'>From
+                            Website</label></div>
+                    <div class='zcwf_col_fld'><input type='checkbox' aria-checked='false' class='zcwf_ckbox'
+                            id='LEADCF102' aria-required='false' aria-label='LEADCF102' name='LEADCF102'
+                            aria-valuemax='3' maxlength='3' onclick='addAriaChecked725008000001971001()'
+                            checked='true'></input>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <!-- hide -->
+                <div class='zcwf_row mobile'>
+
+                    <div class='zcwf_col_fld'>
+                        <input type='text' oninput="this.value = this.value.replace(/[^0-9]/g, '')" id='MobileNumber'
+                            aria-required='true' aria-label='Mobile' required name='Mobile' placeholder="Mobile"
+                            aria-valuemax='30' minlength="10" maxlength='30'></input>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <div class='zcwf_row email'>
+                    <div class='zcwf_col_fld'><input type='email' placeholder="Email" ftype='email' autocomplete='false'
+                            id='Email' aria-required='false' aria-label='Email' name='Email' aria-valuemax='100'
+                            crmlabel='' maxlength='100'></input>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <div class='zcwf_row course'>
+                    <!-- <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label
+                        for='LEADCF31'>Course<span style='color:red;'>*</span></label></div> -->
+                    <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' required role='combobox'
+                            aria-expanded='false' aria-haspopup='listbox' id='LEADCF31'
+                            onChange='addAriaSelected725008000001971001()' aria-required='true' aria-label='LEADCF31'
+                            name='LEADCF31'>
+                            <option value='-None-'>Select Course</option>
+                            <option value='CA&#x20;Foundation'>CA Foundation</option>
+                            <option value='CA&#x20;Intermediate'>CA Intermediate</option>
+                            <option value='CSEET'>CSEET</option>
+                            <option value='CA&#x20;Final'>CA Final</option>
+                            <option value='ACCA'>ACCA</option>
+                            <option value='BCOM&#x20;&#x2b;&#x20;ACCA'>BCOM &#x2b; ACCA</option>
+                            <option value='MBA&#x20;&#x2b;&#x20;ACCA'>MBA &#x2b; ACCA</option>
+                            <option value='CMA&#x20;USA'>CMA USA</option>
+                            <option value='CMA&#x20;-CAT'>CMA -CAT</option>
+                            <option value='CMA&#x20;Intermediate'>CMA Intermediate</option>
+                            <option value='CMA&#x20;Final'>CMA Final</option>
+                            <option value='CPA&#x20;USA'>CPA USA</option>
+                            <option value='MCOM&#x20;&#x2b;&#x20;CPA'>MCOM &#x2b; CPA</option>
+                            <option value='CIA'>CIA</option>
+                            <option value='EA'>EA</option>
+                            <option value='CS&#x20;Executive'>CS Executive</option>
+                            <option value='Nil'>Nil</option>
+                        </select>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <!-- hide -->
+                <div class='zcwf_row wfrm_fld_dpNn hide'>
+                    <div class='zcwf_col_lab' style='font-size:12px; font-family: Verdana;'><label
+                            for='Lead_Status'>Lead
+                            Status</label></div>
+                    <div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false'
+                            aria-haspopup='listbox' id='Lead_Status' onChange='addAriaSelected725008000001971001()'
+                            aria-required='false' aria-label='Lead Status' name='Lead Status'>
+                            <option value='-None-'>-None-</option>
+                            <option selected value='New&#x20;Lead'>New Lead</option>
+                            <option value='Ringing,&#x20;Not&#x20;Responding'>Ringing, Not Responding</option>
+                            <option value='Connected'>Connected</option>
+                            <option value='Need&#x20;Follow-up'>Need Follow-up</option>
+                            <option value='Junk&#x20;Lead'>Junk Lead</option>
+                            <option value='Not&#x20;Interested'>Not Interested</option>
+                            <option value='Not&#x20;Contacted'>Not Contacted</option>
+                            <option value='Qualified'>Qualified</option>
+                            <option value='Not&#x20;Qualified'>Not Qualified</option>
+                            <option value='Lost&#x20;Lead'>Lost Lead</option>
+                        </select>
+                        <div class='zcwf_col_help'></div>
+                    </div>
+                </div>
+                <!-- hide -->
+
+                <div class='zcwf_row '>
+                    <div class='zcwf_col_lab'></div>
+                    <div class='zcwf_col_fld subreset'>
+                        <div class="submit_btn">
+                            <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button'
+                                value='Submit' aria-label='Submit' title='Submit'>
+                        </div>
+                        <div class="reset_btn">
+                            <input type='reset' class='zcwf_button' role='button' name='reset' value='Reset'
+                                aria-label='Reset' title='Reset'>
+
+                        </div>
+                    </div>
+                </div>
+                <script>
+
+                    const Mobile2 = document.getElementById("MobileNumber");
+                    Mobile2.addEventListener("focus", () => { Mobile2.classList.remove("alert") })
+
+                    Mobile2.addEventListener("keyup", () => {
+
+                        if (Mobile2.value.length > 9) {
+                            document.getElementById("formsubmit").style.pointerEvents = "visible"
+                        }
+                        else {
+                            document.getElementById("formsubmit").style.pointerEvents = "none"
+
+                        }
+                    })
+                    // function handleResize() {
+                    //     const viewportWidth = window.innerWidth;
+                    //     console.log(`Browser width changed: ${viewportWidth}`);
+                    //     // Additional actions based on width
+                    //     if (viewportWidth < 768) {
+                    //         console.log("Mobile view");
+                    //     } else {
+                    //         console.log("Desktop view");
+                    //     }
+                    // }
+                    Mobile2.addEventListener("touchend", () => {
+                        console.log(1);
+                        if (Mobile2.value.length > 9) {
+                            document.getElementById("formsubmit").style.pointerEvents = "visible"
+                        }
+                        else {
+                            document.getElementById("formsubmit").style.pointerEvents = "none"
+
+                        }
+                    })
+                    Mobile2.addEventListener("change", () => {
+
+                        if (Mobile2.value.length > 9) {
+                            document.getElementById("formsubmit").style.pointerEvents = "visible"
+                        }
+                        else {
+                            Mobile2.classList.add('alert');
+                            document.getElementById("formsubmit").style.pointerEvents = "none"
+                        }
+                    })
+                    Mobile2.addEventListener("blur", () => {
+                        if (Mobile2.value.length < 10) {
+                            Mobile2.classList.add('alert');
+                            alert("Enter Minimum 10 digit Mobile Number")
+                        }
+                        Mobile2.style.border = "none"
+                    })
+                    function addAriaChecked725008000001971001() {
+                        var checkboxElem = event.target;
+                        if (checkboxElem != undefined && checkboxElem.checked) {
+                            checkboxElem.ariaChecked = 'true';
+                        }
+                        else if (checkboxElem != undefined && !checkboxElem.checked) {
+                            checkboxElem.ariaChecked = 'false';
+                        }
+                    }
+
+                    function addAriaSelected725008000001971001() {
+                        var optionElem = event.target;
+                        var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+                        if (previousSelectedOption) {
+                            previousSelectedOption.removeAttribute('aria-selected');
+                        }
+                        optionElem.querySelectorAll('option')[optionElem.selectedIndex].ariaSelected = 'true';
+                    }
+                    function validateEmail725008000001971001() {
+                        var form = document.forms['WebToLeads725008000001971001'];
+                        var emailFld = form.querySelectorAll('[ftype=email]');
+                        var i;
+                        for (i = 0; i < emailFld.length; i++) {
+                            var emailVal = emailFld[i].value;
+                            if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
+                                var atpos = emailVal.indexOf('@');
+                                var dotpos = emailVal.lastIndexOf('.');
+                                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                                    alert('Please enter a valid email address. ');
+                                    emailFld[i].focus();
                                     return false;
-                                } else if (fieldObj.nodeName == 'SELECT') {
-                                    if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                                        alert(fldLangVal[i] + 'cannot be none.');
-                                        fieldObj.focus();
-                                        return false;
-                                    }
-                                } else if (fieldObj.type == 'checkbox') {
-                                    if (fieldObj.checked == false) {
-                                        alert('Please accept  ' + fldLangVal[i]);
-                                        fieldObj.focus();
-                                        return false;
+                                }
+                            }
+                        }
+                        return true;
+                    }
+                    function checkMandatory725008000001971001() {
+
+                        const Submit = document.getElementById("formsubmit");
+
+                        const desktopScreen = () => {
+                            const number = document.getElementById("MobileNumber").value;
+                            const fName = document.getElementById("First_Name").value;
+                            const lName = document.getElementById("Last_Name").value;
+                            const Course = document.getElementById("LEADCF31").value;
+                            if (number.length > 9 && number.length <= 10) {
+
+                                var mndFileds = new Array('First Name', 'Last Name', 'Mobile', 'LEADCF31');
+                                var fldLangVal = new Array('First\x20Name', 'Last\x20Name', 'Mobile', 'Course');
+                                for (i = 0; i < mndFileds.length; i++) {
+                                    var fieldObj = document.forms['WebToLeads725008000001971001'][mndFileds[i]];
+                                    if (fieldObj) {
+                                        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+                                            if (fieldObj.type == 'file') {
+                                                alert('Please select a file to upload.');
+                                                fieldObj.focus();
+                                                return false;
+                                            }
+                                            alert(fldLangVal[i] + 'cannot be empty.');
+                                            fieldObj.focus();
+                                            return false;
+                                        } else if (fieldObj.nodeName == 'SELECT') {
+                                            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+                                                alert(fldLangVal[i] + 'cannot be none.');
+                                                fieldObj.focus();
+                                                return false;
+                                            }
+                                        } else if (fieldObj.type == 'checkbox') {
+                                            if (fieldObj.checked == false) {
+                                                alert('Please accept  ' + fldLangVal[i]);
+                                                fieldObj.focus();
+                                                return false;
+                                            }
+                                        }
+                                        try {
+                                            if (fieldObj.name == 'Last Name') {
+                                                name = fieldObj.value;
+                                            }
+                                        } catch (e) { }
                                     }
                                 }
-                                try {
-                                    if (fieldObj.name == 'Last Name') {
-                                        name = fieldObj.value;
-                                    }
-                                } catch (e) { }
+                                if (!validateEmail725008000001971001()) { return false; }
+
+                                var urlparams = new URLSearchParams(window.location.search);
+                                if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                                    var webform = document.getElementById('webform725008000001971001');
+                                    var service = urlparams.get('service');
+                                    var smarturlfield = document.createElement('input');
+                                    smarturlfield.setAttribute('type', 'hidden');
+                                    smarturlfield.setAttribute('value', service);
+                                    smarturlfield.setAttribute('name', 'service');
+                                    webform.appendChild(smarturlfield);
+                                }
+
+                                // document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+                            }
+                            else if (Course == "-None-") {
+                                alert("Please Select Couse");
+                                event.preventDefault();
+                            }
+                            else if (number.length < 10) {
+                                alert("Please Enter Valid Number")
+                                event.preventDefault();
                             }
                         }
-                        if (!validateEmail725008000001971001()) { return false; }
 
-                        var urlparams = new URLSearchParams(window.location.search);
-                        if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-                            var webform = document.getElementById('webform725008000001971001');
-                            var service = urlparams.get('service');
-                            var smarturlfield = document.createElement('input');
-                            smarturlfield.setAttribute('type', 'hidden');
-                            smarturlfield.setAttribute('value', service);
-                            smarturlfield.setAttribute('name', 'service');
-                            webform.appendChild(smarturlfield);
+
+
+                    }
+                    function tooltipShow725008000001971001(el) {
+                        var tooltip = el.nextElementSibling;
+                        var tooltipDisplay = tooltip.style.display;
+                        if (tooltipDisplay == 'none') {
+                            var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                            for (i = 0; i < allTooltip.length; i++) {
+                                allTooltip[i].style.display = 'none';
+                            }
+                            tooltip.style.display = 'block';
+                        } else {
+                            tooltip.style.display = 'none';
                         }
-
-                        document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                     }
-                    else if(Course == "-None-"){
-                        alert("Please Select Couse");
-                        event.preventDefault();
-                    } 
-                    else if(number.length < 10){
-                        alert("Please Enter Valid Number")
-                        event.preventDefault();
-                    }
-
-                }
-                function tooltipShow725008000001971001(el) {
-                    var tooltip = el.nextElementSibling;
-                    var tooltipDisplay = tooltip.style.display;
-                    if (tooltipDisplay == 'none') {
-                        var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
-                        for (i = 0; i < allTooltip.length; i++) {
-                            allTooltip[i].style.display = 'none';
-                        }
-                        tooltip.style.display = 'block';
-                    } else {
-                        tooltip.style.display = 'none';
-                    }
-                }
-            </script>
-            <!-- Do not remove this --- Analytics Tracking code starts -->
-            <script id='wf_anal'
-                src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=aa9e2bbba0b473058a22c472ad8e765cfd66a54d3b85ba63549c8ac50347a8780dc67e94a79e4c0ac08d348a92c52e48gid827176a72ebcfc423796e5fa605a87dbff88c96a4cb8dc1e55e495d22971deecgide1e92aed7d66891977ff53a3cad0659d109ac9f9026a5c99712fffcbfcf0469dgid6155bf5f20f90a1b68651d7f99a26db8aa91c8692eca7e9365197cd17ca4f57b&tw=e06a06d4cd91f1a7423a3fd2758b41949022c527c12d0feda8fdf6222607d0d7'></script>
-            <!-- Do not remove this --- Analytics Tracking code ends. -->
-        </form>
+                </script>
+                <!-- Do not remove this --- Analytics Tracking code starts -->
+                <script id='wf_anal'
+                    src='https://crm.zohopublic.in/crm/WebFormAnalyticsServeServlet?rid=aa9e2bbba0b473058a22c472ad8e765cfd66a54d3b85ba63549c8ac50347a8780dc67e94a79e4c0ac08d348a92c52e48gid827176a72ebcfc423796e5fa605a87dbff88c96a4cb8dc1e55e495d22971deecgide1e92aed7d66891977ff53a3cad0659d109ac9f9026a5c99712fffcbfcf0469dgid6155bf5f20f90a1b68651d7f99a26db8aa91c8692eca7e9365197cd17ca4f57b&tw=e06a06d4cd91f1a7423a3fd2758b41949022c527c12d0feda8fdf6222607d0d7'></script>
+                <!-- Do not remove this --- Analytics Tracking code ends. -->
+            </form>
+        </div>
     </div>
-</div>
+</body>
+
+</html>
