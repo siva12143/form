@@ -490,16 +490,16 @@
                                 }
                                 if (!validateEmail725008000001971001()) { return false; }
 
-                                var urlparams = new URLSearchParams(window.location.search);
-                                if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-                                    var webform = document.getElementById('webform725008000001971001');
-                                    var service = urlparams.get('service');
-                                    var smarturlfield = document.createElement('input');
-                                    smarturlfield.setAttribute('type', 'hidden');
-                                    smarturlfield.setAttribute('value', service);
-                                    smarturlfield.setAttribute('name', 'service');
-                                    webform.appendChild(smarturlfield);
-                                }
+                                // var urlparams = new URLSearchParams(window.location.search);
+                                // if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                                //     var webform = document.getElementById('webform725008000001971001');
+                                //     var service = urlparams.get('service');
+                                //     var smarturlfield = document.createElement('input');
+                                //     smarturlfield.setAttribute('type', 'hidden');
+                                //     smarturlfield.setAttribute('value', service);
+                                //     smarturlfield.setAttribute('name', 'service');
+                                //     webform.appendChild(smarturlfield);
+                                // }
 
                                 // document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                             }
