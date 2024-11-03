@@ -370,28 +370,21 @@
 
                         }
                     })
-                    // function handleResize() {
-                    //     const viewportWidth = window.innerWidth;
-                    //     console.log(`Browser width changed: ${viewportWidth}`);
-                    //     // Additional actions based on width
-                    //     if (viewportWidth < 768) {
-                    //         console.log("Mobile view");
-                    //     } else {
-                    //         console.log("Desktop view");
+                    // Mobile2.addEventListener("touchend", () => {
+                    //     console.log(1);
+                        
+                    //     if (Mobile2.value.length > 9) {
+                    //         document.getElementById("formsubmit").style.pointerEvents = "visible"
                     //     }
-                    // }
-                    Mobile2.addEventListener("touchend", () => {
-                        console.log(1);
-                        if (Mobile2.value.length > 9) {
-                            document.getElementById("formsubmit").style.pointerEvents = "visible"
-                        }
-                        else {
-                            document.getElementById("formsubmit").style.pointerEvents = "none"
+                    //     else {
+                    //         document.getElementById("formsubmit").style.pointerEvents = "none"
 
-                        }
-                    })
+                    //     }
+                    // })
                     Mobile2.addEventListener("change", () => {
-
+                        
+                    })
+                    Mobile2.addEventListener("blur", () => {
                         if (Mobile2.value.length > 9) {
                             document.getElementById("formsubmit").style.pointerEvents = "visible"
                         }
@@ -399,8 +392,6 @@
                             Mobile2.classList.add('alert');
                             document.getElementById("formsubmit").style.pointerEvents = "none"
                         }
-                    })
-                    Mobile2.addEventListener("blur", () => {
                         if (Mobile2.value.length < 10) {
                             Mobile2.classList.add('alert');
                             alert("Enter Minimum 10 digit Mobile Number")
@@ -490,16 +481,16 @@
                                 }
                                 if (!validateEmail725008000001971001()) { return false; }
 
-                                // var urlparams = new URLSearchParams(window.location.search);
-                                // if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
-                                //     var webform = document.getElementById('webform725008000001971001');
-                                //     var service = urlparams.get('service');
-                                //     var smarturlfield = document.createElement('input');
-                                //     smarturlfield.setAttribute('type', 'hidden');
-                                //     smarturlfield.setAttribute('value', service);
-                                //     smarturlfield.setAttribute('name', 'service');
-                                //     webform.appendChild(smarturlfield);
-                                // }
+                                var urlparams = new URLSearchParams(window.location.search);
+                                if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+                                    var webform = document.getElementById('webform725008000001971001');
+                                    var service = urlparams.get('service');
+                                    var smarturlfield = document.createElement('input');
+                                    smarturlfield.setAttribute('type', 'hidden');
+                                    smarturlfield.setAttribute('value', service);
+                                    smarturlfield.setAttribute('name', 'service');
+                                    webform.appendChild(smarturlfield);
+                                }
 
                                 // document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
                             }
